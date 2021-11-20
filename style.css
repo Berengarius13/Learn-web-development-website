@@ -1,0 +1,6 @@
+@media (min-width: 768px){
+    .news-input{
+        width: 50%;
+    }
+}
+/* WE us min width so that for screen larger than this will show news letter width to be half */
