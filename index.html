@@ -55,7 +55,46 @@
 
     </nav>
 
+    <!--Showcase -->
+    <!--p-5 to add padding all around (you can also do py to add padding in y axis)-->
+    <!--text-center to align text in center-->
+    <!--text-sm-start so that it will be left align when using larger screen-->
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+        <!-- You don't want container section in container as you want it all to be dark-->
+        <div class="container">
+            <!-- WE just want to add two flex items in class first "text" second "image" side by side-->
+            <!--WE convet it into flexbox by using "d-flex"-->
+            <!--d-sm-flex we don't want flexbox active in smaller mobile screen so we add sm-->
+            <!--we use align items cneter to align items in ceter-->
+            <!--helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size.-->
+             <div class="d-sm-flex align-items-center justify-content-between">
+                 <!--We added two items -->
+                <div>
+                    <!--We use span class to make Web Developer yellow-->
+                    <h1>Become a <span class="text-warning">
+                        Web Developer
+                    </span> </h1>
+                    <!--WE added text and we use attribut called "lead" to make text bigger-->
+                    <!--my-4 to add margin in y axis-->
+                    <p class="lead my-4">
+                        We focus on teaching our students the fundamentals of the latest
+                        and greatest technologies to prepare them for their first dev role
+                    </p>
+                    <!--WE add button primary makes color, btn lg makes it large-->
+                    <button class="btn btn-primary btn-lg">
+                        Start The Enrollment
+                    </button>
+                </div>
+                <div>
+                    <!--d-none d-sm-block we use it so that site is still responsive in smaller screen-->
+                    <!--We want image to be responsive as we change screen size so we add img-fluid and w-50 halves it's size-->
+                    <img class = "img-fluid w-50 d-none d-sm-block"src="img/showcase.svg" alt="imgae of web developer">
+                </div>
+             </div>
+        </div>
 
+    </section>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
