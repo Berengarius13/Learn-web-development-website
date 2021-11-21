@@ -1,3 +1,14 @@
+/* we try to add a ghost element before the body with no content and of block type with height = 60px*/
+/*Why? because nav bar is overlapping with main content*/
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+    color: black;
+    background: #000;
+
+}
+
 @media (min-width: 768px){
     .news-input{
         width: 50%;
